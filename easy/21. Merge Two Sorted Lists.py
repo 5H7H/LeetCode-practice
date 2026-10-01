@@ -15,11 +15,11 @@ class Solution:
                 result.next = list2
                 list2 = list2.next
         
-            result = result.next #连接链表
+            result = result.next #链表前进一个结点
 
         if list1 == None:   #处理单个list为空的情况
             result.next = list2
         else:
             result.next = list1
         
-        return head.next
+        return head.next #头结点为空，需返回head.next
